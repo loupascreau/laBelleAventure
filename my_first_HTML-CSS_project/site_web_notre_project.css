@@ -1,0 +1,314 @@
+/*Définition des polices personnalisés*/
+@font-face {
+    font-family: 'sinkin_sans400_regular';
+    src: url('fonts/../SinkinSans-400Regular-webfont.eot');
+    src: url('fonts/../SinkinSans-400Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/../SinkinSans-400Regular-webfont.woff2') format('woff2'),
+         url('fonts/../SinkinSans-400Regular-webfont.woff') format('woff'),
+         url('fonts/../SinkinSans-400Regular-webfont.ttf') format('truetype'),
+         url('fonts/../SinkinSans-400Regular-webfont.svg#sinkin_sans400_regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*Eléménts principaux de la page*/
+
+body
+{
+	background: url(images/fond_color_redim.jpg);
+	background-attachment: fixed;
+	font-family: 'sinkin_sans400_regular', "Verdana", "Arial", sans-serif;
+	color: #69095c;
+}
+
+#bloc_page
+{
+	width: 900px;
+	margin: auto;
+}
+
+section h1, nav a 
+{
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+/*header*/
+
+header
+{
+	height: 152px;
+	border-bottom: 1px solid #69095c;
+}
+
+#logo
+{
+	float: left;
+	width: 150px;
+	height: 150px;
+}
+
+#titre_nav
+{
+	border: 1px 1px 0;
+	margin-left: 170px;
+	height: 150px;
+}
+
+#titre_principal h1
+{
+	text-align: center;
+	font-weight: normal;
+	font-size: 2.5em;
+	margin-right: 170px;
+	margin-top: 0px;
+	padding-top: 20px;
+}
+
+/*Navigation*/
+
+nav ul
+{
+	list-style-type: none;
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 46px;
+}
+
+nav li
+{
+	margin-right: 15px;
+}
+
+nav a
+{
+	font-size: 1.3em;
+	color:#69095c;
+	text-decoration: none;
+}
+
+nav a:hover
+{
+	color: #128221;
+	border-bottom: 3px solid #128221;
+}
+
+/*Corps*/
+
+section
+{
+	display: flex;
+	margin-bottom: 20px;
+}
+
+article, aside
+{
+	text-align: justify;
+}
+
+article
+{
+	margin-right: 20px;
+}
+
+article p 
+{
+	font-size: 0.9em;
+	margin-left: 0px;
+}
+
+article a:hover
+{
+	text-decoration: underline;
+	box-shadow: 1px 1px 3px #d11919;
+}
+
+#titre
+{
+	text-align: center;
+	font-size: 1.2em;
+}
+
+#type
+{
+	margin-top: 55px;
+	position: relative;
+	padding-bottom: 50px;
+}
+
+.bouton_rouge
+{
+	position: absolute;
+	bottom:0;
+	left: 40px;
+	height: 25px;
+	background-color: #d11919;
+	border: 1px solid #d11919;
+	border-radius: 5px;
+	font-size: 1.2em;
+	text-align: center;
+	padding: 3px 8px 0px 8px;
+	color: white;
+	text-decoration: none;
+}
+
+aside
+{
+	position: relative;
+	background-color:#757575;
+	box-shadow: 0px 2px 5px #1c1a19;
+	border-radius: 5px;
+	padding: 10px;
+	color: white;
+	font-size: 0.9em; 
+	height: 310px;
+	margin-top: 50px;
+}
+
+aside h1
+{
+	text-align: center;
+	text-decoration: underline;
+}
+
+aside p
+{
+	text-align: center;
+}
+
+iframe
+{
+	width: 420px; /*-140*/
+	height: 236px; /*-78*/
+}
+
+/*div*/
+
+#service_civique
+{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#service_civique h3
+{
+	text-align: center;
+}
+
+/*Footer*/
+
+footer
+{
+	display: flex;
+	border-top: 1px solid #69095c;
+	padding-top: 25px;
+	padding-bottom: 30px;
+	font-size: 0.8em;
+}
+
+footer ul
+{
+	padding-top: 0px;
+	list-style-type: none;
+}
+
+footer a
+{
+	text-decoration: none;
+	color: #69095c;
+}
+
+footer a:hover
+{
+	text-decoration: underline;
+}
+
+#nom_du_site
+{
+	width: 89%;
+}
+
+#contacts
+{
+	width: 11%;
+}
+
+/*Media queries*/
+
+@media screen and (max-width: 1024px)
+{
+	#bloc_page
+	{
+		width: auto;
+	}
+
+	section
+	{
+		flex-direction: column;
+	}
+
+	article, aside
+	{
+		width: auto;
+		margin-bottom: 15px;
+	}
+
+	#type
+	{
+		text-align: center;
+		margin: auto;
+	}
+
+	#service_civique
+	{
+		text-align: center;
+	}
+
+	aside
+	{
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: 800px)
+{
+	header
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		height: 170px;
+	}
+
+	#logo
+	{
+		margin:auto;
+		margin-left: 15px;
+		width: 150px;
+		flex: 1;
+	}
+
+	#titre_nav
+	{
+		margin-left: 0px;
+		flex:1;
+	}
+
+	#titre_principal h1
+	{
+		display: none;
+		width: 0;
+	}
+
+	nav ul
+	{
+		flex-direction: column;
+		margin-top: 10px;
+	}
+
+	nav li
+	{
+		margin-bottom: 12px;
+	}
+}

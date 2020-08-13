@@ -1,0 +1,277 @@
+/*Définition des polices personnalisés*/
+@font-face {
+    font-family: 'sinkin_sans400_regular';
+    src: url('fonts/../SinkinSans-400Regular-webfont.eot');
+    src: url('fonts/../SinkinSans-400Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/../SinkinSans-400Regular-webfont.woff2') format('woff2'),
+         url('fonts/../SinkinSans-400Regular-webfont.woff') format('woff'),
+         url('fonts/../SinkinSans-400Regular-webfont.ttf') format('truetype'),
+         url('fonts/../SinkinSans-400Regular-webfont.svg#sinkin_sans400_regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*Eléménts principaux de la page*/
+
+body
+{
+	background: url(images/fond_color_redim.jpg);
+	background-attachment: fixed;
+	font-family: 'sinkin_sans400_regular', "Verdana", "Arial", sans-serif;
+	color: #69095c;
+}
+
+#bloc_page
+{
+	width: 900px;
+	margin: auto;
+}
+
+section h1, nav a 
+{
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+/*header*/
+
+header
+{
+	height: 152px;
+	border-bottom: 1px solid #69095c;
+}
+
+#logo
+{
+	float: left;
+	width: 150px;
+	height: 150px;
+}
+
+#titre_nav
+{
+	border: 1px 1px 0;
+	margin-left: 170px;
+	height: 150px;
+}
+
+#titre_principal h1
+{
+	text-align: center;
+	font-weight: normal;
+	font-size: 2.5em;
+	margin-right: 170px;
+	margin-top: 0px;
+	padding-top: 20px;
+}
+
+/*Navigation*/
+
+nav ul
+{
+	list-style-type: none;
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 46px;
+}
+
+nav li
+{
+	margin-right: 15px;
+}
+
+nav a
+{
+	font-size: 1.3em;
+	color:#69095c;
+	text-decoration: none;
+}
+
+nav a:hover
+{
+	color: #128221;
+	border-bottom: 3px solid #128221;
+}
+
+/*Corps*/
+
+section
+{
+	display: flex;
+	margin-bottom: 20px;
+}
+
+article, aside
+{
+	text-align: justify;
+}
+
+article
+{
+	margin-right: 10px;
+	flex: 2;
+}
+
+article h1
+{
+	font-size: 1.4em;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+article p 
+{
+	font-size: 0.8em;
+	margin-left: 60px;
+}
+
+article h2
+{
+	font-weight: normal;
+	font-size: 1.3em;
+	text-decoration: underline;
+}
+
+article a 
+{
+	text-decoration: none;
+	color:#69095c;
+}
+
+article a:hover
+{
+	text-decoration: underline;
+	color:#128221;
+}
+
+.contacter
+{
+	margin-left: 50px;
+}
+
+aside
+{
+	flex: 2;
+	position: relative;
+	background-color:#757575;
+	box-shadow: 0px 2px 5px #1c1a19;
+	border-radius: 5px;
+	margin-top: 65px;
+	padding: 10px;
+	color: white;
+	font-size: 0.9em; 
+	height: 335px;
+}
+
+aside p
+{
+	text-align: center;
+}
+
+#map_jard
+{
+	text-align: center;
+}
+
+#adresse
+{
+	font-size: 1em;
+}
+
+/*Footer*/
+
+footer
+{
+	display: flex;
+	margin-top: 40px;
+	border-top: 1px solid #69095c;
+	padding-top: 25px;
+	padding-bottom: 30px;
+	font-size: 0.8em;
+}
+
+#nom_du_site
+{
+	width: 90%;
+}
+
+#lieu
+{
+	width: 10%;
+}
+
+/*Media queries*/
+
+@media screen and (max-width: 1024px)
+{
+	#bloc_page
+	{
+		width: auto;
+	}
+
+	section
+	{
+		flex-direction: column;
+	}
+
+	article, aside
+	{
+		width: auto;
+		margin-bottom: 15px;
+		text-align: center;
+	}
+
+	aside
+	{
+		padding-bottom: 40px;
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 800px)
+{
+	header
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		height: 170px;
+	}
+
+	#logo
+	{
+		margin:auto;
+		margin-left: 15px;
+		width: 150px;
+		flex: 1;
+	}
+
+	#titre_nav
+	{
+		margin-left: 0px;
+		flex:1;
+	}
+
+	#titre_principal h1
+	{
+		display: none;
+		width: 0;
+	}
+
+	nav ul
+	{
+		flex-direction: column;
+		margin-top: 10px;
+	}
+
+	nav li
+	{
+		margin-bottom: 12px;
+	}
+
+	aside
+	{
+		margin-top: 20px;
+	}
+}
